@@ -19,8 +19,13 @@ pom.xml.versionsBackup
 node_modules/
 npm-debug.log
 .env
+.env.local
+.env.production
 dist/
 build/
+
+# Docker
+.dockerignore.local
 
 # OS
 .DS_Store

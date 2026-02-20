@@ -316,7 +316,39 @@ CREATE TABLE bookings (
 
 ---
 
-## 🔮 Future Roadmap
+## � Deployment to Render
+
+Deploy your application to the cloud with two methods:
+
+### 📦 Native Buildpack (Recommended for Beginners)
+Simple and fast deployment without Docker.
+```bash
+# See detailed guide
+DEPLOYMENT.md
+```
+
+### 🐳 Docker Deployment (Recommended for Production)
+Full control with Docker containerization.
+```bash
+# Test locally first
+docker-compose up --build
+
+# See detailed guide
+DEPLOYMENT-DOCKER.md
+```
+
+### 🎯 Not Sure Which to Choose?
+See [DEPLOYMENT-GUIDE.md](DEPLOYMENT-GUIDE.md) for a detailed comparison and recommendation.
+
+**Quick Deploy:**
+1. Push code to GitHub
+2. Create free account on [Render](https://render.com)
+3. Follow deployment guide
+4. Your app will be live in 10-15 minutes! 🎉
+
+---
+
+## �🔮 Future Roadmap
 
 ### Phase 1: AI Integration
 - 🤖 Natural language processing for booking requests
