@@ -1,4 +1,4 @@
-# 🏢 Conference Room Management System (CRMS)
+# 🏢 Campus Resource Management System (CRMS)
 
 A modern, full-stack web application for managing conference room bookings, resources, and users. Built with **Spring Boot** backend and **React** frontend.
 
@@ -248,4 +248,5 @@ For issues or questions:
 - 🚀 Modern Technologies
 
 **Happy Booking! 🎊**
+
 
