@@ -174,56 +174,75 @@ Jar file will be created in: `crms/target/crms-0.0.1-SNAPSHOT.jar`
 
 ```
 crms/
-├── crms/                                    # Backend (Spring Boot)
-│   ├── src/main/java/com/crms/
-│   │   ├── controller/                      # REST API Controllers
-│   │   │   ├── UserController.java
-│   │   │   ├── ResourceController.java
-│   │   │   └── BookingController.java
-│   │   ├── service/                         # Business Logic
-│   │   │   ├── UserService.java
-│   │   │   ├── ResourceService.java
-│   │   │   └── BookingService.java
-│   │   ├── repository/                      # Data Access Layer
-│   │   │   ├── UserRepository.java
-│   │   │   ├── ResourceRepository.java
-│   │   │   └── BookingRepository.java
-│   │   ├── entity/                          # JPA Entities
-│   │   │   ├── User.java
-│   │   │   ├── Resource.java
-│   │   │   ├── Booking.java
-│   │   │   ├── Role.java
-│   │   │   ├── UserStatus.java
-│   │   │   ├── ResourceType.java
-│   │   │   ├── ResourceStatus.java
-│   │   │   └── BookingStatus.java
-│   │   ├── dto/                             # Data Transfer Objects
-│   │   │   └── LoginRequest.java
-│   │   ├── exception/                       # Custom Exceptions
-│   │   │   ├── ResourceNotFoundException.java
-│   │   │   ├── BookingConflictException.java
-│   │   │   └── GlobalExceptionHandler.java
-│   │   └── CrmsApplication.java
-│   ├── src/main/resources/
-│   │   └── application.properties
-│   ├── src/test/
-│   └── pom.xml
+├── src/                                     # Backend (Spring Boot)
+│   ├── main/
+│   │   ├── java/com/crms/
+│   │   │   ├── controller/                  # REST API Controllers
+│   │   │   │   ├── UserController.java
+│   │   │   │   ├── ResourceController.java
+│   │   │   │   └── BookingController.java
+│   │   │   ├── service/                     # Business Logic
+│   │   │   │   ├── UserService.java
+│   │   │   │   ├── ResourceService.java
+│   │   │   │   └── BookingService.java
+│   │   │   ├── repository/                  # Data Access Layer
+│   │   │   │   ├── UserRepository.java
+│   │   │   │   ├── ResourceRepository.java
+│   │   │   │   └── BookingRepository.java
+│   │   │   ├── entity/                      # JPA Entities
+│   │   │   │   ├── User.java
+│   │   │   │   ├── Resource.java
+│   │   │   │   ├── Booking.java
+│   │   │   │   ├── Role.java
+│   │   │   │   ├── UserStatus.java
+│   │   │   │   ├── ResourceType.java
+│   │   │   │   ├── ResourceStatus.java
+│   │   │   │   └── BookingStatus.java
+│   │   │   ├── dto/                         # Data Transfer Objects
+│   │   │   │   └── LoginRequest.java
+│   │   │   ├── exception/                   # Custom Exceptions
+│   │   │   │   ├── ResourceNotFoundException.java
+│   │   │   │   ├── BookingConflictException.java
+│   │   │   │   └── GlobalExceptionHandler.java
+│   │   │   └── CrmsApplication.java         # Main Application Entry
+│   │   └── resources/
+│   │       ├── application.properties       # Configuration
+│   │       ├── static/                      # Static Resources
+│   │       └── templates/                   # Templates
+│   └── test/
+│       └── java/com/crms/
+│           └── CrmsApplicationTests.java
 │
 ├── frontend/                                # Frontend (React)
 │   ├── src/
-│   │   ├── components/                      # React Components
-│   │   │   ├── Users.jsx
+│   │   ├── pages/                           # Page Components
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Bookings.jsx
 │   │   │   ├── Resources.jsx
-│   │   │   └── Bookings.jsx
+│   │   │   └── UserManagement.jsx
+│   │   ├── components/                      # Reusable Components
+│   │   │   ├── Sidebar.jsx
+│   │   │   └── ui.jsx
+│   │   ├── api/                             # API Service Layer
+│   │   │   └── api.js
 │   │   ├── App.jsx                          # Main App Component
-│   │   ├── App.css                          # App Styles
 │   │   ├── index.css                        # Global Styles
-│   │   └── main.jsx                         # React Entry Point
-│   ├── index.html
+│   │   └── index.jsx                        # React Entry Point
+│   ├── public/                              # Public Assets
+│   ├── index.html                           # HTML Template
 │   ├── vite.config.js                       # Vite Configuration
-│   └── package.json
+│   └── package.json                         # Dependencies
 │
-├── .gitignore
+├── target/                                  # Build Output
+│   ├── classes/                             # Compiled Classes
+│   ├── generated-sources/                   # Generated Code
+│   └── test-classes/                        # Test Classes
+│
+├── pom.xml                                  # Maven Configuration
+├── mvnw                                     # Maven Wrapper (Unix)
+├── mvnw.cmd                                 # Maven Wrapper (Windows)
+├── HELP.md
 └── README.md
 ```
 
