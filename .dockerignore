@@ -1,0 +1,31 @@
+.git
+.gitignore
+README.md
+DEPLOYMENT.md
+DEPLOYMENT-CHECKLIST.md
+HELP.md
+
+# Backend
+target/
+*.log
+.mvn/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# CI/CD
+.github/
