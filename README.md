@@ -230,10 +230,6 @@ The application uses Hibernate's auto DDL feature (`ddl-auto=update`) to automat
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ---
 
 ## 📞 Support
@@ -252,3 +248,4 @@ For issues or questions:
 - 🚀 Modern Technologies
 
 **Happy Booking! 🎊**
+
